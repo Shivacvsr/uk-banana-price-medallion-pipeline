@@ -30,5 +30,5 @@ Local: Install via pip install -e . and run using python -m banana_pipeline --la
 
 6. Resilience and Failure HandlingThe pipeline is designed with a "fail-fast" philosophy to ensure data quality and system reliability:Potential FailureHandling Strategygov.uk unavailableUses HTTP retries with exponential backoff before alerting.CSV link missingFails immediately with a clear error log to prevent empty runs.Schema/Parse ErrorTriggers a validation failure to block corrupt data from the pipeline.Low Row CountFlags a data quality exception to ensure the dataset is complete.Storage Write FailureLogs the specific I/O error and raises an exception for troubleshooting
 
-
 tbd
+tbdx
